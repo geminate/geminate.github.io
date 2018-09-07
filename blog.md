@@ -1,7 +1,7 @@
 ---
 layout: page
-title: All My Blogs
-subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; Take notes about everything new
+title: 我的文章
+subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; 积累身边的点点滴滴
 menu: blog
 css: ['blog-page.css']
 ---

@@ -1,8 +1,8 @@
 title: 刘慧昊的个人博客
-name: 刘慧昊
+name: geminate
 email: 1061036802@qq.com
-location: Beijing, China
-company: aiBank
+location: 中国/北京
+company: 中信百信银行股份有限公司
 company_url: https://www.aibank.com/
 github_url: https://github.com/geminate
 github_username: geminate
@@ -10,10 +10,8 @@ description: 积累身边的点点滴滴
 favicon: ico.png
 repository: geminate/geminate.github.io
 
-# The base hostname & protocol for your site
-# For local test, please use http://localhost:4000
-# For production, use your github page url. ex. http://dongchuan.github.io
 url: http://localhost:4000
+# url: https://geminate.github.io/
 
 ## Gem
 gems:
@@ -58,7 +56,7 @@ navs:
 
   -
     href: /blog
-    label: 文章
+    label: 我的文章
 
   -
     href: /bookmark

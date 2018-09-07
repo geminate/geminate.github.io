@@ -1,10 +1,10 @@
 <div class="about row">
 
-    <div class="col-md-8">
+    <div class="col-md-8 about-content">
 
         <h2>关于我</h2>
 
-        <p>BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla</p>
+        <p>刘慧昊，2016年毕业于 北京理工大学，居住地北京，就职于 北京中信百信银行股份有限公司，工作方向为 Web前端 ，骑行爱好者。</p>
 
         <h2>联系我</h2>
 
@@ -16,13 +16,11 @@
         <h2>技能关键词</h2>
 
         {% if site.skill_keywords %}
-        <div class="panel panel-default">
-            <div class="panel-body">
+
                 {% for keyword in site.skill_keywords %}
                 <button class="btn btn-default" type="button">{{ keyword }}</button>
                 {% endfor %}
-            </div>
-        </div>
+
         {% endif %}
     </div>
 

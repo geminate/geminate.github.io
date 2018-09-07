@@ -3,9 +3,9 @@
     <section class="jumbotron geopattern" data-pattern-id="{{ page.title }}">
         <div class="container">
             <div id="jumbotron-meta-info">
-                <h1>Open Source Projects</h1>
+                <h1>开源项目</h1>
                 <span class="meta-info">
-                    I have <span class="repo-count badge">{{ sorted_repos.size }}</span> projects on Github
+                    我在 Github 上一共有 <span class="repo-count badge">{{ sorted_repos.size }}</span> 个开源项目
                 </span>
             </div>
         </div>
@@ -36,7 +36,7 @@
                             <span data-toggle="tooltip" class="meta-info" title="{{ repo.forks_count }} forks">
                                 <span class="octicon octicon-git-branch"></span> {{ repo.forks_count }}
                             </span>
-                            <span data-toggle="tooltip" class="meta-info" title="Last updated：{{ repo.updated_at }}">
+                            <span data-toggle="tooltip" class="meta-info" title="最后更新：{{ repo.updated_at }}">
                                 <span class="octicon octicon-clock"></span>
                                 <time datetime="{{ repo.updated_at }}" title="{{ repo.updated_at }}">{{ repo.updated_at | date: '%Y-%m-%d' }}</time>
                             </span>
