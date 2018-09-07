@@ -1,0 +1,82 @@
+title: 刘慧昊的个人博客
+name: 刘慧昊
+email: 1061036802@qq.com
+location: Beijing, China
+company: aiBank
+company_url: https://www.aibank.com/
+github_url: https://github.com/geminate
+github_username: geminate
+description: 积累身边的点点滴滴
+favicon: ico.png
+repository: geminate/geminate.github.io
+
+# The base hostname & protocol for your site
+# For local test, please use http://localhost:4000
+# For production, use your github page url. ex. http://dongchuan.github.io
+url: http://localhost:4000
+
+## Gem
+gems:
+  - jekyll-paginate
+  - jekyll-geo-pattern
+  - rouge
+  - kramdown
+  - jekyll-github-metadata
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
+
+kramdown:
+  input: GFM
+  enable_coderay: true
+
+# Disque
+# disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
+
+# Pagination
+paginate: 10
+paginate_path: 'page:num'
+
+# Navigation. If you do not like these modules, just remove them :D
+navs:
+  -
+    href: /
+    label: 首页
+
+  -
+    href: /open-source
+    label: 开源项目
+
+  -
+    href: /blog
+    label: 文章
+
+  -
+    href: /bookmark
+    label: 书签
+
+  -
+    href: /about
+    label: 关于我
+
+# Sidebar to show popular repo
+side_bar_repo_limit: 25 # Number of repos to show
+
+# Google Analytics
+#analytics :
+#  provider : google
+#  google :
+#      tracking_id : 'tracking_id'  # ex. UA-72165600-X
+
+
+# For about.html. Fell free to create your own!
+skill_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, Boostrap, Vue]

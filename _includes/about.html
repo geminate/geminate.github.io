@@ -1,0 +1,33 @@
+<div class="about row">
+
+    <div class="col-md-8">
+
+        <h2>关于我</h2>
+
+        <p>BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla</p>
+
+        <h2>联系我</h2>
+
+        <ul>
+            <li>Email：<a href="mailto:{{ site.email }}" target="_top">{{ site.email }}</a></li>
+            <li>GitHub：<a href="{{ site.github_url }}">{{ site.github_url }}</a></li>
+        </ul>
+
+        <h2>技能关键词</h2>
+
+        {% if site.skill_keywords %}
+        <div class="panel panel-default">
+            <div class="panel-body">
+                {% for keyword in site.skill_keywords %}
+                <button class="btn btn-default" type="button">{{ keyword }}</button>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="col-md-4">
+        {% include sidebar-popular-repo.html %}
+    </div>
+
+</div>
