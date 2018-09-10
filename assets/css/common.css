@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Microsoft YaHei,"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: Microsoft YaHei, "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 /** Header **/
-.site-header{
-    padding-top:20px;
-    padding-bottom:20px;
+.site-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
     position: fixed;
     margin: 40px 0 30px 0;
@@ -47,22 +47,22 @@
     line-height: 38px;
 }
 
-.site-header-nav{
-    float:right;
+.site-header-nav {
+    float: right;
     margin-bottom: -20px;
 }
 
 .site-header-nav-item {
     color: #000;
-    display:inline-block;
-    padding:10px;
-    margin-left:1.25rem;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 1.25rem;
     font-size: 20px;
 }
 
 /******* Scroll Start *******/
 .site-header {
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .site-header.site-header-nav-scrolled {
@@ -75,11 +75,12 @@
     -o-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
     box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
 }
+
 /******* Scroll End *******/
 
 /******* Scroll Start on the phone *******/
 .site-header {
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .site-header.site-header-nav-scrolled-ph {
@@ -91,6 +92,7 @@
     -o-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
     box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
 }
+
 /******* Scroll End *******/
 
 /** Jumbotron **/
@@ -104,6 +106,7 @@
     color: #fff;
     text-decoration: none;
 }
+
 .jumbotron #jumbotron-meta-info {
     margin-top: 20px;
 }
@@ -120,14 +123,14 @@
 }
 
 /** Footer **/
-.site-footer{
-    position:relative;
-    margin-top:40px;
-    padding:40px 0;
-    font-size:12px;
-    line-height:1.5;
-    color:#777;
-    border-top:2px solid #eee
+.site-footer {
+    position: relative;
+    margin-top: 40px;
+    padding: 40px 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #777;
+    border-top: 2px solid #eee
 }
 
 .site-footer .octicon-mark-github {
@@ -137,7 +140,7 @@
 }
 
 .site-footer .octicon-mark-github:hover {
-    color:#bbb;
+    color: #bbb;
 }
 
 /** Post List **/
@@ -178,6 +181,8 @@
     text-align: center;
 }
 
-.markdown-body{
-    font-size: 20px;
+.markdown-body img {
+    margin: 10px 0px;
+    display: block;
+    box-shadow: 0px 0px 20px #cfcfcf;
 }
