@@ -186,3 +186,7 @@
     display: block;
     box-shadow: 0px 0px 20px #cfcfcf;
 }
+
+.markdown-body p {
+    text-indent: 2em;
+}
