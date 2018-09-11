@@ -1,7 +1,7 @@
 ---
 layout: post
 title: react-router 和 react-redux 搭配使用时，Link点击页面不更新问题
-category: React
+categories: React
 no-post-nav: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JS中的this以及Call与Apply
-category: Js
+categories: Js
 ---
 
 ## 一. this 关键字

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CSS3 3D transform 变换详解
-category: CSS
+categories: Css
 ---
 
 ## 一. 相关CSS属性和转换方法
