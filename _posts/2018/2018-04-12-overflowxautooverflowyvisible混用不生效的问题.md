@@ -2,6 +2,7 @@
 layout: post
 title: overflow-x:auto;overflow-y:visible;混用不生效的问题
 categories: Css
+no-post-nav: true
 ---
 
 今天在实现表格中的功能按钮时遇到了一个问题
