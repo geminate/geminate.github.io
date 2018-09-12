@@ -68,7 +68,7 @@ navs:
     label: 关于我
 
 # Sidebar to show popular repo
-side_bar_repo_limit: 25 # Number of repos to show
+side_bar_repo_limit: 10 # Number of repos to show
 
 # Google Analytics
 #analytics :

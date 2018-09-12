@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: bookmark
 title: 书签
 subtitle: <span class="mega-octicon octicon-repo"></span>&nbsp;&nbsp;标记常用的 库、工具、文章
 menu: Bookmark
