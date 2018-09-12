@@ -11,7 +11,7 @@ favicon: ico.png
 repository: geminate/geminate.github.io
 
 # url: http://localhost:4000
-url: https://geminate.github.io/
+url: https://geminate.github.io
 
 ## Gem
 gems:
