@@ -186,3 +186,21 @@
     display: block;
     box-shadow: 0px 0px 20px #cfcfcf;
 }
+
+/** pagination **/
+.pagination .btn-group .btn-outline {
+    border: 1px solid #ddd;
+}
+
+.pagination .btn-group .btn-outline.active {
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.pagination .btn-group .btn-outline:disabled {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+}
