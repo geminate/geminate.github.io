@@ -29,6 +29,21 @@ css: ['sidebar-post-nav.css']
         </div>
         {% endif %}
 
+        <div id="comment" class="col-md-12"></div>
+        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+        <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+        <script>
+            var gitment = new Gitment({
+                owner: 'geminate',
+                repo: 'blogComment',
+                oauth: {
+                    client_id: '24249734433540a5fc37',
+                    client_secret: 'b33853158dc74ff9ae7a7c1478f964f53c4df7d6',
+                },
+            });
+            gitment.render('comment')
+        </script>
+
     </div>
 
 </article>
