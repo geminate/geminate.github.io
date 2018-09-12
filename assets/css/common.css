@@ -204,3 +204,8 @@
     cursor: not-allowed;
     background-color: #fff;
 }
+
+/** comment **/
+#comment .gitment-root-container, #comment .gitment-header-container {
+    margin: 0;
+}
