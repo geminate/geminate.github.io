@@ -17,14 +17,14 @@ no-post-nav: true
 * 组件不是一个 `route 组件` ，也就是说 组件不是被这样渲染的：`<Route component={SomeConnectedThing}/>`
 * 解决办法：使用 withRouter 包裹组件：
 
-{% highlight js %}
+```javascript
 // before
 export default connect(mapStateToProps)(Something)
 
 // after
 import { withRouter } from 'react-router-dom'
 export default withRouter(connect(mapStateToProps)(Something))
-{% endhighlight %}
+```
 
 出现原因：Redux 的 connect 修改了 组件的shouldComponentUpdate方法，但当组件不包含route传来的属性(props)时，地址的改变也就不会引起组件的更新。
 

@@ -20,7 +20,7 @@ categories: React
 
 **设置组件的装载标志位**
 
-{% highlight js %}
+```javascript
     componentWillMount() {
         this.mounted = true;
         fetch("").then((status, response) => {
@@ -33,17 +33,17 @@ categories: React
     componentWillUnmount() {
         this.mounted = false;
     }
-{% endhighlight %}
+```
 
 **在 componentWillUnmount() 中重写 setState 方法**
 
-{% highlight js %}
+```javascript
     componentWillUnmount() {
         this.setState = (state, callback) => {
             return;
         };
     }
-{% endhighlight %}
+```
 
 **使用 Redux 管理全部的异步调用。**
 

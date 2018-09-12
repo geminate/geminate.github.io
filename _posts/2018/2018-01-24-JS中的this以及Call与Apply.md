@@ -14,36 +14,36 @@ this 的指向不是在函数定义的时候确定的，只有函数执行的时
 
 1. 在 普通函数 中
 
-{% highlight js %}
+```javascript
 function test(){
   console.log(this);
 }
 test();// Window
-{% endhighlight %}
+```
 
 上面的代码 this 没有调用的对象，默认为Window，但在严格模式下的默认值为undefined
 
-{% highlight js %}
+```javascript
 function test(){
   "use strict";
   console.log(this);
 }
 test();// undefined
-{% endhighlight %}
+```
 
 当我们设置了方法的调用对象后，this 将指向调用对象。
 
-{% highlight js %}
+```javascript
 function test(){
   "use strict";
   console.log(this);
 }
 window.test();// Window
-{% endhighlight %}
+```
 
 同理也能理解对象方法的this。
 
-{% highlight js %}
+```javascript
 var name="window";
 var person = {
   name:"hhLiu",
@@ -56,13 +56,13 @@ window.person.sayName();// hhLiu
 
 var wFun = person.sayName;
 window.wFun();// window
-{% endhighlight %}
+```
 
 上面例子中前两个输出均为hhliu，我们可以总结出，this 指向的是上一级调用它的对象。而最后一个例子印证了this的指向只有在函数执行时才能确定，尽管wFun和person.sayName是同一个函数，但是由于wFun的调用对象是window，因此会导致this的指向不同。
 
 2. 在 构造函数 中
 
-{% highlight js %}
+```javascript
 function Person(name){
   this.name = name;
   this.sayName = function(){
@@ -71,13 +71,13 @@ function Person(name){
 }
 var person = new Person("hhliu");
 person.sayName();// hhliu
-{% endhighlight %}
+```
 
 当我们把一个函数当做构造函数来使用，即使用 new 操作符的时候，函数中的 this 将指向新建的对象。
 
 3. 在 回调函数 中
 
-{% highlight js %}
+```javascript
 var test = {
   id:"test",
   sayId:function(){
@@ -86,7 +86,7 @@ var test = {
 }
 
 $("#abc").click(test.sayId); // abc
-{% endhighlight %}
+```
 
 回调函数实际上是将test.sayId方法在$("#abc")对象上执行，因此调用者也就不再是 test 对象而是实际调用的对象。
 
@@ -95,7 +95,7 @@ $("#abc").click(test.sayId); // abc
 
 也就是说 闭包不能访问到其外部函数的this。
 
-{% highlight js %}
+```javascript
 var out = {
   name:"out",
   sayName:function(){
@@ -106,11 +106,11 @@ var out = {
   }
 }
 out.sayName()();// window
-{% endhighlight %}
+```
 
 如果我们想要获取闭包的外部函数中的this的话，可以用一个变量存储一下，闭包内去访问变量即可；
 
-{% highlight js %}
+```javascript
 var out = {
   name:"out",
   sayName:function(){
@@ -122,13 +122,13 @@ var out = {
   }
 }
 out.sayName()();// out
-{% endhighlight %}
+```
 
 ## 二. Call与Apply
 
 Call 与 Apply 实现的功能相同，都是为了动态改变this而出现的，如果一个对象没有某个方法，我们可以使用call或apply来“借用”其它对象的方法。
 
-{% highlight js %}
+```javascript
 var cat = {
 	name : "kitty"
 };
@@ -144,7 +144,7 @@ var person = {
 person.sayName.call(cat); // Kitty
 person.plusNum.call(cat, 1, 5); // 6
 person.plusNum.apply(cat, [ 1, 5 ]);// 6
-{% endhighlight %}
+```
 
 这里cat不会说自己的名字也不会作加法，但我们使用call和apply可以使cat借用人的方法。
 
@@ -152,7 +152,7 @@ call和apply的区别在于call接受的是连续参数，而apply接受的是�
 
 另外利用call和apply可以实现继承
 
-{% highlight js %}
+```javascript
 function Parent(username) {
 	this.username = username;
 	this.hello = function() {
@@ -175,4 +175,4 @@ var child = new Child("lisi", "123456");
 parent.hello();
 child.hello();
 child.world();
-{% endhighlight %}
+```

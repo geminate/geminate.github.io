@@ -42,7 +42,7 @@ electron中一个很重要的概念就是主进程与渲染进程，简单来说
 
 主进程发消息，渲染进程接收消息：
 
-{% highlight js %}
+```javascript
 // 主进程使用minWindow发送消息
 mainWindow.webContents.send(IPC.SET_MUSIC_LIST, {message:'message'});
 
@@ -52,11 +52,11 @@ import electron from 'electron';
 electron.ipcRenderer.on(IPC.SET_MUSIC_LIST, (event, message) => {
     console.log(message);
 });
-{% endhighlight %}
+```
 
 渲染进程发消息，主进程接收消息：
 
-{% highlight js %}
+```javascript
 // 渲染进程使用 electron.ipcRenderer 发送消息
 import electron from 'electron';
 
@@ -68,13 +68,13 @@ import electron from 'electron';
 electron.ipcMain.on(IPC.RENDER_READY, (event, arg) => {
     console.log(arg);
 });
-{% endhighlight %}
+```
 
 使用起来相当方便，而主进程和渲染进程内部通信与状态管理则分别用各自的store实现。主进程涉及用户配置的可直接以文件形式保存在用户文件夹，而Vue的状态管理直接使用Vuex即可。
 
 #### 3\. window 创建
 
-{% highlight js %}
+```javascript
 function createWindow() {
     mainWindow = new BrowserWindow({
         height: 600,
@@ -88,14 +88,14 @@ function createWindow() {
         mainWindow = null
     });
 }
-{% endhighlight %}
+```
 
 上面为主窗体创建的配置，由于我们的播放器需要整体透明且无上部的标题栏，因此设置 titleBarStyle: ‘hidden-inset’ 和 transparent: true ，注意在这样设置之后，我们还需要对窗口内的 body 设置 -webkit-app-region: drag; 的Css 使整个窗口可拖动，之后在对需要有点击效果的地方(不需要拖动)设置-webkit-app-region: no-drag;
 
 #### 4\. 右下角托盘图标 创建
 
 
-{% highlight js %}
+```javascript
 /**
  * Create Tray
  */
@@ -124,7 +124,7 @@ function onChooseFolderClick() {
         sendMusicList(musicPaths);
     }
 }
-{% endhighlight %}
+```
 
 由于播放器上的按钮有限，需要将一些功能性的按钮放在 托盘图标的右键菜单中，可使用electron的Tray对象实现，这里主要是将文件夹选择的功能放在了这里，文件选择可用dialog.showOpenDialog 实现。
 
@@ -136,7 +136,7 @@ Vue组件并没有什么特殊的，我这里拆成了musicAudio、musicCanvas�
 
 由于electron中无论是主进程还是渲染进程中均支持node模块，因此播放音频十分方便，我这里是使用 mediaserver 在主进程中创建了一个音乐server，之后在渲染进程中使用audio标签即可。
 
-{% highlight js %}
+```javascript
 class MusicServer {
 
     start() {
@@ -163,13 +163,13 @@ class MusicServer {
         res.end('not found');
     }
 }
-{% endhighlight %}
+```
 
 ## 四. Canvas 相关
 
 播放器使用 Canvas 实现那一圈 音频可视化效果，主要有两个部分，外圈的柱状条和内圈的跳动颗粒。这里是使用了 WebAudio Api 实现的。
 
-{% highlight js %}
+```javascript
 createAnalyser() {
     const AC = new (window.AudioContext || window.webkitAudioContext)();
     const analyser = AC.createAnalyser();
@@ -181,20 +181,20 @@ createAnalyser() {
     gainnode.connect(AC.destination);
     return analyser;
 }
-{% endhighlight %}
+```
 
 常用的api中我们可以用 AC.createGain() 控制音频增益(即音量大小)，可以使用AC.createAnalyser()对音频进行分析。我们在实现音频可视化的时候就是使用 AC.createAnalyser().getByteFrequencyData() 生成频率数组。具体使用方式如下
 
-{% highlight js %}
+```javascript
 this.analyser.fftSize = 1024;
 const arrayLength = this.analyser.frequencyBinCount;
 const array = new Uint8Array(arrayLength);
 this.analyser.getByteFrequencyData(array);
-{% endhighlight %}
+```
 
 之后我们可以根据 Array 里面的 频率数据进行取值，然后绘制Canvas。绘制的过程就不再详细说明，主要是数学上的计算，涉及到围绕圆的半圈进行绘制，之后取镜像。在处理时为了美观，对内圈数值做过滤处理，对外圈数值做发散处理。我这里只是简单处理了一下，想要更加美观还需要更多的数学处理。
 
-{% highlight js %}
+```javascript
 /**
  * 绘制内圈 point
  */
@@ -234,6 +234,6 @@ drawOuter(array, i, ctx) {
 
     }
 }
-{% endhighlight %}
+```
 
 最后，本项目仅是本人处于兴趣与学习的目的搞出来的小玩具，很多功能不完善，以后有时间会考虑再优化美化一下~

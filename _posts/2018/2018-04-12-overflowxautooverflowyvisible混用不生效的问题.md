@@ -21,7 +21,7 @@ no-post-nav: true
 
 因此我在wrapper div上又设置了 `overflow-y：visible` 发现没有出现应有的效果。代码：
 
-{% highlight html %}
+```html
 <div style="overflow-x: auto;overflow-y: visible">
     <table style=" width: 180%;">
         <tbody>
@@ -46,7 +46,7 @@ no-post-nav: true
         </tbody>
     </table>
 </div>
-{% endhighlight %}
+```
 
 打开浏览器一看，发现overflow-y被计算成了auto
 

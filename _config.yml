@@ -36,7 +36,7 @@ defaults: []
 
 kramdown:
   input: GFM
-  enable_coderay: true
+#  enable_coderay: true
 
 # Disque
 # disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
