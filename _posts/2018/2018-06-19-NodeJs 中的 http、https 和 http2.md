@@ -138,7 +138,7 @@ const server = http.createServer((req, res) => {
 
 ## 二、 HTTPS
 
-![image](http://liuhuihao.com/wp-content/uploads/2018/05/http2-009.png)
+![http2-009.png](https://geminate.github.io/assets/images/2018/http2-009.png)
 
 ### 1. 创建公钥、私钥及证书
 
@@ -194,18 +194,18 @@ https.createServer(options, (req, res) => {
 
 这是一个HTTP2的演示地址，分别用HTTP/1.1和HTTP/2请求379张图片，对比出HTTP/2在速度上的优势
 
-![image](http://liuhuihao.com/wp-content/uploads/2018/05/http2-001.png)
+![http2-001.png](https://geminate.github.io/assets/images/2018/http2-001.png)
 打开控制台查看网络请求，我们可以发现HTTP/2和HTTP/1.1的明显区别
 
 HTTP/1.1：
-![image](http://liuhuihao.com/wp-content/uploads/2018/05/http2-003.png)
+![http2-003.png](https://geminate.github.io/assets/images/2018/http2-003.png)
 
 HTTP/2：
-![image](http://liuhuihao.com/wp-content/uploads/2018/05/http2-002.png)
+![http2-002.png](https://geminate.github.io/assets/images/2018/http2-002.png)
 
 由上图可以看出，**多路复用允许同时通过单一的 HTTP/2 连接发起多重的请求-响应消息；而HTTP/1.1协议中，浏览器客户端在同一时间，针对同一域名下的请求有一定数量限制。超过限制数目的请求会被阻塞**
 
-![image](http://liuhuihao.com/wp-content/uploads/2018/05/http2-004.jpg)
+![http2-004.jpg](https://geminate.github.io/assets/images/2018/http2-004.jpg)
 
 #### 首部压缩
 - http/1.x 的 header 由于 cookie 和 user agent很容易膨胀，而且每次都要重复发送。http/2使用 encoder 来减少需要传输的 header 大小，通讯双方各自 cache一份 header fields 表，既避免了重复 header 的传输，又减小了需要传输的大小。高效的压缩算法可以很大的压缩 header，减少发送包的数量从而降低延迟
@@ -213,7 +213,7 @@ HTTP/2：
 #### 服务端推送
 - 服务端推送是一种在客户端请求之前发送数据的机制。在 HTTP/2 中，服务器可以对客户端的一个请求发送多个响应。举个例子，如果一个请求请求的是index.html，服务器很可能会同时响应index.html、logo.jpg 以及 css 和 js 文件，因为它知道客户端会用到这些东西。这相当于在一个 HTML 文档内集合了所有的资源。
 
-![image](http://liuhuihao.com/wp-content/uploads/2018/05/http2-005.png)
+![http2-005.png](https://geminate.github.io/assets/images/2018/http2-005.png)
 
 ### 2. nodeJS http/2 实践
 
@@ -274,7 +274,7 @@ const getFdAndHeader = (fileName) => {
 ```
 
 效果：
-![image](http://liuhuihao.com/wp-content/uploads/2018/05/http2-008.png)
+![http2-008.png](https://geminate.github.io/assets/images/2018/http2-008.png)
 
 - 实现 http/2 服务端推送
 
@@ -323,6 +323,6 @@ const getFdAndHeader = (fileName) => {
 ```
 
 推送效果：
-![image](http://liuhuihao.com/wp-content/uploads/2018/05/http2-006.png)
+![http2-006.png](https://geminate.github.io/assets/images/2018/http2-006.png)
 无推送效果：
-![image](http://liuhuihao.com/wp-content/uploads/2018/05/http2-007.png)
+![http2-007.png](https://geminate.github.io/assets/images/2018/http2-007.png)
