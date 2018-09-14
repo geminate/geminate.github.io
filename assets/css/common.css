@@ -132,6 +132,10 @@
 }
 
 /** Post List **/
+#contentRow {
+    position: relative;
+}
+
 .post-list-item {
     position: relative;
     padding-top: 30px;
