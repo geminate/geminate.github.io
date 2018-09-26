@@ -1,0 +1,19 @@
+{
+  "name": "geminate.github.io",
+  "version": "1.0.0",
+  "description": "My blog",
+  "main": "index.js",
+  "scripts": {
+    "build": "bundle exec jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geminate/geminate.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geminate/geminate.github.io/issues"
+  },
+  "homepage": "https://github.com/geminate/geminate.github.io#readme"
+}

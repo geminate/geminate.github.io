@@ -28,5 +28,9 @@ menu: Bookmark
 - [mpvue](http://mpvue.com/mpvue/) - 使用 Vue.js 开发小程序的前端框架
 - [mpvue-router-patch](https://github.com/F-loat/mpvue-router-patch) - 在 mpvue 中使用 vue-router 兼容的路由写法
 
+## 小程序
+- [微信小程序](https://developers.weixin.qq.com/miniprogram/dev/) - 微信小程序文档
+- [百度小程序](https://smartprogram.baidu.com/docs/develop/tutorial/codedir/) - 百度小程序文档
+
 ## 其他
 - [jekyll](https://github.com/jekyll/jekyll) - 搭建 github.io 博客用
