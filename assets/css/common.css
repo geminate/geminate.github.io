@@ -134,6 +134,7 @@
 /** Post List **/
 #contentRow {
     position: relative;
+    display: flex;
 }
 
 .post-list-item {
@@ -171,6 +172,11 @@
 
 .sidebar-title {
     text-align: center;
+}
+
+#post-directory-module {
+    position: sticky;
+    top: 100px;
 }
 
 .markdown-body img {
