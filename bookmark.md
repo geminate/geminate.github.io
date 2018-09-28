@@ -25,12 +25,13 @@ menu: Bookmark
 - [vuex](https://vuex.vuejs.org/zh/) - 为 Vue.js 应用程序开发的状态管理模式
 - [vue-i18n](https://github.com/kazupon/vue-i18n) - Vue i18N 组件
 - [vue-i18n-loader](https://github.com/kazupon/vue-i18n-loader) - Vue i18N 组件 loader, 支持 \<i18n>\</i18n> 写法
-- [mpvue](http://mpvue.com/mpvue/) - 使用 Vue.js 开发小程序的前端框架
-- [mpvue-router-patch](https://github.com/F-loat/mpvue-router-patch) - 在 mpvue 中使用 vue-router 兼容的路由写法
+- [Ant Design Vue](https://github.com/vueComponent/ant-design-vue) - ant vue 组件库
 
 ## 小程序
 - [微信小程序](https://developers.weixin.qq.com/miniprogram/dev/) - 微信小程序文档
 - [百度小程序](https://smartprogram.baidu.com/docs/develop/tutorial/codedir/) - 百度小程序文档
+- [mpvue](http://mpvue.com/mpvue/) - 使用 Vue.js 开发小程序的前端框架
+- [mpvue-router-patch](https://github.com/F-loat/mpvue-router-patch) - 在 mpvue 中使用 vue-router 兼容的路由写法
 
 ## 其他
 - [jekyll](https://github.com/jekyll/jekyll) - 搭建 github.io 博客用
