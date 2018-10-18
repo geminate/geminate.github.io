@@ -9,6 +9,7 @@ menu: Bookmark
 - [Moment.js](http://momentjs.com/) - 日期处理类库
 - [Underscore.js](http://underscorejs.org/) - 在不扩展任何内置对象的情况下提供了大量有用的辅助方法
 - [fly.js](https://github.com/wendux/fly) - 一个基于 promise 的，轻量且强大的Javascript http 网络库, 支持多种环境
+- [Axios](https://github.com/axios/axios) - Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中。
 - [Mock.js](http://mockjs.com/examples.html) - 生成随机数据，拦截 Ajax 请求
 - [js-base64](https://github.com/dankogai/js-base64) - Js Base64 库
 - [jshashes](https://github.com/h2non/jshashes) - Js MD5, SHA1, SHA256, SHA512, RIPEMD, HMAC 加密库
@@ -27,6 +28,7 @@ menu: Bookmark
 - [vue-i18n](https://github.com/kazupon/vue-i18n) - Vue i18N 组件
 - [vue-i18n-loader](https://github.com/kazupon/vue-i18n-loader) - Vue i18N 组件 loader, 支持 \<i18n>\</i18n> 写法
 - [Ant Design Vue](https://github.com/vueComponent/ant-design-vue) - ant vue 组件库
+- [element-ui](http://element.eleme.io/#/zh-CN) - 一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库
 
 ## 小程序
 - [微信小程序](https://developers.weixin.qq.com/miniprogram/dev/) - 微信小程序文档
