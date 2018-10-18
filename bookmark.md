@@ -12,6 +12,7 @@ menu: Bookmark
 - [Mock.js](http://mockjs.com/examples.html) - 生成随机数据，拦截 Ajax 请求
 - [js-base64](https://github.com/dankogai/js-base64) - Js Base64 库
 - [jshashes](https://github.com/h2non/jshashes) - Js MD5, SHA1, SHA256, SHA512, RIPEMD, HMAC 加密库
+- [Webpack](https://webpack.js.org/guides/getting-started/) - Webpack 打包工具
 
 ## Node.js
 - [NodeJs](http://nodejs.cn/api/) - NodeJs 文档
