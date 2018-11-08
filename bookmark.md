@@ -36,5 +36,9 @@ menu: Bookmark
 - [mpvue](http://mpvue.com/mpvue/) - 使用 Vue.js 开发小程序的前端框架
 - [mpvue-router-patch](https://github.com/F-loat/mpvue-router-patch) - 在 mpvue 中使用 vue-router 兼容的路由写法
 
+## Python
+- [pyquery](https://github.com/gawel/pyquery) - 使用 jquery 语法分析 html 文本
+- [PyMySQL](https://github.com/PyMySQL/PyMySQL) - python mysql客户端
+
 ## 其他
 - [jekyll](https://github.com/jekyll/jekyll) - 搭建 github.io 博客用
