@@ -40,5 +40,12 @@ menu: Bookmark
 - [pyquery](https://github.com/gawel/pyquery) - 使用 jquery 语法分析 html 文本
 - [PyMySQL](https://github.com/PyMySQL/PyMySQL) - python mysql客户端
 
+## 测试
+- [Mocha](https://mochajs.org/) - 测试框架
+- [Karma](http://karma-runner.github.io) - 浏览器测试环境
+- [Chai](https://www.chaijs.com/) - 断言库
+- [Vue-Test-Utils](https://vue-test-utils.vuejs.org) - Vue 测试公用库
+- [Sinon](https://github.com/jekyll/jekyll) - 实现测试替代
+
 ## 其他
 - [jekyll](https://github.com/jekyll/jekyll) - 搭建 github.io 博客用
