@@ -35,6 +35,7 @@ menu: Bookmark
 - [百度小程序](https://smartprogram.baidu.com/docs/develop/tutorial/codedir/) - 百度小程序文档
 - [mpvue](http://mpvue.com/mpvue/) - 使用 Vue.js 开发小程序的前端框架
 - [mpvue-router-patch](https://github.com/F-loat/mpvue-router-patch) - 在 mpvue 中使用 vue-router 兼容的路由写法
+- [uni-app](https://uniapp.dcloud.io/) - 使用 Vue.js 开发跨平台应用的前端框架，开发者编写一套代码，可编译到iOS、Android、H5、小程序等多个平台
 
 ## Python
 - [pyquery](https://github.com/gawel/pyquery) - 使用 jquery 语法分析 html 文本
