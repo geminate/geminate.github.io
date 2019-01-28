@@ -52,3 +52,4 @@ menu: Bookmark
 - [jekyll](https://github.com/jekyll/jekyll) - 搭建 github.io 博客用
 - [docsify](https://docsify.js.org/#/?id=docsify) - 生成 项目文档
 - [Tesseract.js](https://github.com/naptha/tesseract.js) - node 图片识别库(OCR)
+- [remove.bg](https://www.remove.bg/) - 去除照片背景的在线工具
