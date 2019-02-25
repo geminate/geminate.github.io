@@ -56,3 +56,4 @@ menu: Bookmark
 - [Tesseract.js](https://github.com/naptha/tesseract.js) - node 图片识别库(OCR)
 - [remove.bg](https://www.remove.bg/) - 去除照片背景的在线工具
 - [imgcook](https://imgcook.taobao.org/) - 由设计稿一键智能生成代码的大厨
+- [cssicon](http://www.webhek.com/post/cssicon.html#/#first) - 用CSS3绘制的各种小图标
