@@ -1,0 +1,18 @@
+.photo-content .title {
+    padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+.photo-content .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.photo-content .img-container .small {
+    flex: 0 0 auto;
+    height: 250px;
+    margin: 5px;
+}

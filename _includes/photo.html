@@ -1,0 +1,42 @@
+<div class="photo-content row">
+
+</div>
+
+<script>
+    var staticFileArray = JSON.parse('{{site.static_files | jsonify}}');
+    var photoFileArray = staticFileArray.filter(function (item) {
+        return item.path.indexOf('/assets/photo') != -1;
+    });
+    photoFileArray = photoFileArray.map(function (item) {
+        return Object.assign(item, {date: item.path.split('/')[3]});
+    });
+    var groupByArray = groupByDate(photoFileArray);
+    addDom(groupByArray);
+
+
+    function groupByDate(photoFileArray) {
+        var groupByArray = [];
+        for (photoItem in photoFileArray) {
+            var flag = true;
+            for (groupItem in groupByArray) {
+                if (groupByArray[groupItem].date == photoFileArray[photoItem].date) {
+                    groupByArray[groupItem].value.push(photoFileArray[photoItem]);
+                    flag = false;
+                }
+            }
+            if (flag) {
+                groupByArray.push({date: photoFileArray[photoItem].date, value: [photoFileArray[photoItem]]});
+            }
+        }
+        return groupByArray;
+    }
+
+    function addDom(domArray) {
+        for (item in domArray) {
+            $('.photo-content').append('<div class="file-container ' + domArray[item].date + '"><h2 class="title">' + domArray[item].date + '</h2><div class="img-container"></div></div>');
+            for (photo in domArray[item].value) {
+                $('.photo-content').find('.' + domArray[item].date + '').find('.img-container').append('<img class="small" src="/assets/photo/' + domArray[item].date + '/' + domArray[item].value[photo].name + '">')
+            }
+        }
+    }
+</script>

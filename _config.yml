@@ -1,3 +1,4 @@
+encoding: utf-8
 title: 刘慧昊的个人博客
 name: geminate
 email: 1061036802@qq.com
@@ -32,7 +33,6 @@ source:      .
 destination: ./_site
 
 quiet:    false
-defaults: []
 
 kramdown:
   input: GFM
@@ -59,6 +59,10 @@ navs:
   -
     href: /bookmark
     label: 书签
+
+  -
+    href: /photo
+    label: 影集
 
   -
     href: /about
