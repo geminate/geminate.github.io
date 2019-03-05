@@ -14,6 +14,8 @@ menu: Bookmark
 - [js-base64](https://github.com/dankogai/js-base64) - Js Base64 库
 - [jshashes](https://github.com/h2non/jshashes) - Js MD5, SHA1, SHA256, SHA512, RIPEMD, HMAC 加密库
 - [Webpack](https://webpack.js.org/guides/getting-started/) - Webpack 打包工具
+- [AlloyFinger](https://github.com/AlloyTeam/AlloyFinger) - 体积很小的手势库
+- [lottie-web](https://github.com/airbnb/lottie-web) - AE 转 Web 的动画库
 
 ## Node.js
 - [NodeJs](http://nodejs.cn/api/) - NodeJs 文档
