@@ -1,0 +1,50 @@
+---
+layout: default
+css: ['sidebar-post-nav.css']
+---
+{% include jumbotron.html %}
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div id="contentRow" class="row">
+
+        {% if page.no-post-nav %}
+        <div class="col-md-12 markdown-body">
+
+            {{ content }}
+
+        </div>
+        {% else %}
+        <div class="col-md-8 markdown-body">
+
+            {{ content }}
+
+        </div>
+
+        <div class="col-md-4">
+            {% include sidebar-post-nav.html %}
+        </div>
+        {% endif %}
+    </div>
+
+    <hr class="col-md-12">
+
+    <div class="row">
+        <div id="comment" class="col-md-12"></div>
+        <link rel="stylesheet" href="https://geminate.github.io/assets/css/comment.css">
+        <script src="https://geminate.github.io/assets/js/gitment.browser.js"></script>
+        <script>
+            var gitment = new Gitment({
+                id: '{{ page.date }}',
+                owner: 'geminate',
+                repo: 'blogComment',
+                oauth: {
+                    client_id: '24249734433540a5fc37',
+                    client_secret: 'b33853158dc74ff9ae7a7c1478f964f53c4df7d6',
+                },
+            });
+            gitment.render('comment')
+        </script>
+    </div>
+    </div>
+
+</article>

@@ -1,0 +1,78 @@
+encoding: utf-8
+title: 刘慧昊的个人博客
+name: geminate
+email: 1061036802@qq.com
+location: 中国/北京
+company: 中信百信银行股份有限公司
+company_url: https://www.aibank.com/
+github_url: https://github.com/geminate
+github_username: geminate
+description: 积累身边的点点滴滴
+favicon: ico.png
+repository: geminate/geminate.github.io
+
+# url: http://localhost:4000
+url: https://geminate.github.io
+
+## Gem
+gems:
+  - jekyll-paginate
+  - jekyll-geo-pattern
+  - rouge
+  - kramdown
+  - jekyll-github-metadata
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./_site
+
+quiet:    false
+
+kramdown:
+  input: GFM
+#  enable_coderay: true
+
+# Pagination
+paginate: 10
+paginate_path: 'page:num'
+
+# Navigation. If you do not like these modules, just remove them :D
+navs:
+  -
+    href: /
+    label: 首页
+
+  -
+    href: /open-source
+    label: 开源项目
+
+  -
+    href: /blog
+    label: 我的文章
+
+  -
+    href: /bookmark
+    label: 书签
+
+  -
+    href: /about
+    label: 关于我
+
+# Sidebar to show popular repo
+side_bar_repo_limit: 10 # Number of repos to show
+
+# Google Analytics
+analytics :
+  provider : google
+  google :
+      tracking_id : 'UA-125624112-1'  # ex. UA-72165600-X
+
+
+# For about.html. Fell free to create your own!
+skill_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, Boostrap, Vue]
